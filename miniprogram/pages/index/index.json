@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "search": "../../components/index/search/search",
+    "banners": "../../components/index/banners/banners",
+    "hotlist": "../../components/index/hotlist/hotlist",
+    "hotmv": "../../components/index/hotmv/hotmv"
+  }
+}

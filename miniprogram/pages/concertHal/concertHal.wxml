@@ -1,0 +1,11 @@
+<view class="title">热门</view>
+<view class="list">
+  <scroll-view>
+    <list-view wx:for="{{artists}}" wx:key="index" class="songer" bind:tap="todetail" data-id="{{item.id}}">
+      <image src="{{item.picUrl}}" class="songer-img" /><text class="songer-name">{{item.name}}</text>
+    </list-view>
+  </scroll-view>
+</view>
+<view class="searchType">
+  <view wx:for="{{searchType}}" wx:key="*this" bind:tap="search" data-keywords="{{item}}">{{item}}</view>
+</view>

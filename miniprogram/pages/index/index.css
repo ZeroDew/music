@@ -1,0 +1,12 @@
+.banners {
+  width: 750rpx;
+}
+
+.banners .banners-item {
+  width: 100%;
+}
+
+.banner-item-img {
+  display: block;
+  width: 100%;
+}

@@ -1,0 +1,21 @@
+/* components/search/search.wxss */
+.search {
+  height: 70rpx;
+  margin: 10rpx;
+  border: 0.5rpx solid #494848;
+  border-radius: 5rpx;
+  text-align: center;
+  color: #f6ce55;
+  line-height: 70rpx;
+  font-size: 30rpx;
+  box-sizing: border-box;
+  position: relative;
+
+  .searchIcon {
+    position: absolute;
+    width: 40rpx;
+    height: 40rpx;
+    top: 15rpx;
+    right: 30rpx
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "songinfo": "/components/play/songInfo/songinfo",
+    "progress": "/components/play/progress/progress",
+    "play-option": "/components/play/playOption/playOption"
+  }
+}

@@ -1,0 +1,17 @@
+<view class="top">
+  <songinfo isPlaying="{{isPlaying}}" songInfo="{{songInfo}}" songIyric="{{lyric}}" currentTime="{{currentTime}}" iyricIndex="{{iyricIndex}}"></songinfo>
+</view>
+<view class="bot">
+  <progress currentTime="{{currentTime}}" songLength="{{songLength}}" bindsongChange="userChangeSong"></progress>
+  <play-option bind:playmode="getMode" bind:showdialog='showdialog' bind:tap="changeMode" mode="{{playmode}}" isPlaying="{{isPlaying}}"></play-option>
+</view>
+<view class="list" wx:if="{{showdialog}}">
+  <view class="title">歌曲列表<text class="close" bind:tap="close">X</text></view>
+  <scroll-view style="height: 100%;" scroll-y="true">
+    <list-view wx:for="{{musicList}}" wx:key="index">
+      <view class="list-item {{playIndex==index?'playaction':''}}" bind:tap="changeSong" data-index="{{index}}">
+        <text>{{item.name}}</text>-<text>{{item.ar[0].name}}</text>
+      </view>
+    </list-view>
+  </scroll-view>
+</view>

@@ -1,0 +1,49 @@
+/* pages/playing/playing.wxss */
+.top {
+  width: 100%;
+}
+
+.list {
+  position: absolute;
+  width: 100%;
+  height: 70vh;
+  bottom: 0;
+  background-color: rgba($color: #000000, $alpha: 0.8);
+  overflow: hidden;
+
+  .title {
+    width: 100%;
+    height: 100rpx;
+    color: #919191;
+    font-size: 35rpx;
+    text-align: center;
+    line-height: 100rpx;
+    border-bottom: 1rpx solid #999999;
+    position: relative;
+
+    .close {
+      position: absolute;
+      top: 50%;
+      right: 30rpx;
+      transform: translateY(-50%);
+    }
+  }
+
+
+}
+
+.list-item {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #919191;
+  font-size: 33rpx;
+  padding: 30rpx 50rpx 30rpx 30rpx;
+  box-sizing: border-box;
+  border-bottom: 2rpx dashed #919191;
+  position: relative;
+}
+
+.playaction {
+  color: #fdcb32 !important;
+}

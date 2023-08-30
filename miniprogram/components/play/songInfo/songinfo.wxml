@@ -1,0 +1,31 @@
+<view class="song" style="background:linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0, 0.9)), url('{{songInfo.al.picUrl||songInfo.album.artist.img1v1Url}}') no-repeat;  background-size: cover;">
+  <view class="name">{{songInfo.name}}</view>
+  <view class="author">{{songInfo.ar[0].name}}</view>
+
+  <swiper class="songinfo" bindchange="changeswiper">
+    <swiper-item>
+
+      <view class="cover " style="  animation-name:playing;animation-play-state:{{isPlaying?'play':'paused'}}">
+        <van-image round width="100%" height="100%" src="{{songInfo.al.picUrl||songInfo.album.artist.img1v1Url}}" />
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <scroll-view style="height: 400rpx;" scroll-y="true" scroll-into-view="my{{iyricIndex}}">
+        <view class="lyric">
+          <text class="lyric-item" wx:if="{{!songIyric.con.length}}">暂无歌词</text>
+          <block wx:else>
+
+            <text wx:for="{{songIyric.con.length}}" wx:key="*this" id="my{{index}}" class="lyric-item {{index==iyricIndex?'lyricactive':''}}">
+              {{songIyric.con[item]}}</text>
+          </block>
+
+        </view>
+      </scroll-view>
+    </swiper-item>
+  </swiper>
+
+  <view class="slide">
+    <text class="left {{active==0?'active':''}}"></text>
+    <text class="right {{active==1?'active':''}}"></text>
+  </view>
+</view>

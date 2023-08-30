@@ -1,0 +1,4 @@
+<view class="search" bind:tap="toSearch">
+  <text> 输入歌手名、歌曲名搜索 </text>
+  <image src="../../../image/image/search-2.png" mode="aspectFit" class="searchIcon" />
+</view>

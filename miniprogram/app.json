@@ -1,0 +1,59 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/profile/profile",
+    "pages/search/search",
+    "pages/playing/playing",
+    "pages/concertHal/concertHal",
+    "pages/mvdetail/mvdetail",
+    "pages/songlist/songlist",
+    "pages/camera/camera",
+    "pages/map/map"
+  ],
+  "requiredPrivateInfos": [
+    "chooseLocation", "chooseAddress"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "网易music",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "backgroundColor": "#333",
+    "selectedColor": "#000000",
+    "list": [{
+        "pagePath": "pages/index/index",
+        "text": "推荐",
+        "iconPath": "./image/image/home-1.png",
+        "selectedIconPath": "./image/image/home-2.png"
+      }, {
+        "pagePath": "pages/playing/playing",
+        "text": "正在播放",
+        "iconPath": "./image/image/rank-1.png",
+        "selectedIconPath": "./image/image/rank-2.png"
+      }, {
+        "pagePath": "pages/concertHal/concertHal",
+        "text": "音乐厅",
+        "iconPath": "./image/image/singer-1.png",
+        "selectedIconPath": "./image/image/singer-2.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我的",
+        "iconPath": "./image/image/my.png",
+        "selectedIconPath": "./image/image/my-1.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "requiredBackgroundModes": [
+    "audio", "location"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  }
+}

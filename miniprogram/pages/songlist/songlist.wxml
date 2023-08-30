@@ -1,0 +1,12 @@
+<view class="cover">
+  <image src="{{coverImg}}" mode="aspectFill" class="cover-img" />
+  <view class="randomPlay" bind:tap="randomSong">随机播放</view>
+</view>
+<view class="list">
+  <scroll-view>
+    <list-view class="list-item" wx:for="{{hotList}}" wx:key="index" bind:tap="tosonglist" data-id="{{item.al.id}}">
+      <view class="item-name">{{item.name}}</view>
+      <view class="item-author">{{item.ar[0].name}}</view>
+    </list-view>
+  </scroll-view>
+</view>

@@ -1,0 +1,26 @@
+<view class="userinfo">
+  <image src="../../image/image/defaule.png" mode="" class="img" />
+</view>
+
+
+<navigator url="/pages/camera/camera" class="cont">
+  <text class="text">扫码</text><text class="text">></text>
+</navigator>
+<view class="cont">
+  <text class="text">联系我们</text><text class="text">></text>
+</view>
+<navigator url="/pages/map/map" class="cont">
+  <text class="text">打开地图</text><text class="text">></text>
+</navigator>
+<view bind:tap="choseLocation" class="cont">
+  <text class="text">选择位置</text><text class="text">></text>
+</view>
+<view bind:tap="address" class="cont">
+  <text class="text">收货地址</text><text class="text">></text>
+</view>
+<view class="cont">
+  <text class="text">用户登录</text><text class="text">></text>
+</view>
+<button open-type="contact">客服</button>
+<button open-type="share">分享</button>
+<button bind:tap="getinfo">获取用户ID</button>

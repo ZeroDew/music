@@ -1,0 +1,21 @@
+<view class="search-top">
+  <input type="text" placeholder="请输入歌手名、歌曲名搜索" class="search-ipt" value="{{keywords}}" placeholder-style="color: #c3a549" bindinput="searchHandle" />
+</view>
+<block wx:if="{{!searchResult.length}}">
+  <view class="hot-search">
+    <view class="search-text">热门搜索：</view>
+    <view class="search-list">
+      <text class="search-item" wx:for="{{hotSearch}}" wx:key="index" bind:tap="itemSearch" data-item="{{item.first}}"> {{item.first}} </text>
+    </view>
+  </view>
+</block>
+<block wx:else>
+  <view class="hot-search">
+    <view class="search-text">搜索结果：</view>
+    <view class="search-list">
+      <view class="list-item" wx:for="{{searchResult}}" wx:key="index" bind:tap="playSong" data-id="{{item.id}}">
+        {{item.name}} -<text wx:for="{{item.artists}}" wx:for-item="ele" wx:for-index="idx" wx:key="*this"> {{ele.name}} </text>
+      </view>
+    </view>
+  </view>
+</block>

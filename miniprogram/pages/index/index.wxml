@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- 搜索框 -->
+  <view class="search">
+    <search></search>
+  </view>
+  <!-- 轮播图 -->
+  <view class="banners">
+    <banners Banners="{{Banners}}"></banners>
+  </view>
+  <!-- 热门榜单推荐 -->
+  <view class="hotList">
+    <hotlist HotList="{{HotList}}"></hotlist>
+  </view>
+  <!-- 热门mv推荐 -->
+  <view class="hotMV">
+    <hotmv hotMV="{{hotMV}}"></hotmv>
+  </view>
+</view>

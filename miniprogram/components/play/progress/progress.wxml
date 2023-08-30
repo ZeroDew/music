@@ -1,0 +1,5 @@
+<view class="progress-box">
+  <view class="time">{{playTime}}</view>
+  <slider class="progress" value="{{currentTime}}" max="{{songLength}}" block-size="12" activeColor="#fdcb32" block-color="#fdcb32" bindchange="changeSong" />
+  <view class="time"> {{totalTime}}</view>
+</view>

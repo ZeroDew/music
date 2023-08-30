@@ -1,0 +1,23 @@
+<view class="options">
+  <view class="model">
+    <view class="btn" bind:tap="changemode" data-mode="random" wx:if="{{active==0}}">
+      <i class="icon-sequence"></i>
+    </view>
+    <view class="btn" bind:tap="changemode" data-mode="loop" wx:if="{{active==1}}"> <i class="icon-randomp"></i></view>
+    <view class="btn" bind:tap="changemode" data-mode="defalut" wx:if="{{active==2}}"> <i class="icon-loop"></i></view>
+
+  </view>
+  <view class="perv">
+    <view class="btn" bind:tap="controlPlay" data-mode="prev"><i class="icon-prev"></i></view>
+  </view>
+  <view class="play">
+    <view class="btn" bind:tap="controlPlay" data-mode="play" wx:if="{{!isPlaying}}"><i class="icon-play"></i></view>
+    <view class="btn" bind:tap="controlPlay" data-mode="pause" wx:else><i class="icon-pause"></i></view>
+  </view>
+  <view class="next">
+    <view class="btn" bind:tap="controlPlay" data-mode="next"><i class="icon-next"></i></view>
+  </view>
+  <view class="playList">
+    <view class="btn" bind:tap="showList"><i class="icon-playlist"></i></view>
+  </view>
+</view>

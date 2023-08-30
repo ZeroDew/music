@@ -1,0 +1,18 @@
+/* components/play/progress/progress.wxss */
+.progress-box {
+  width: 100%;
+  margin: 50rpx 0 30rpx 0;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.progress-box .time {
+  color: #a8a8a8;
+  font-size: 30rpx;
+  line-height: 38px;
+}
+
+.progress-box .progress {
+  width: 70%;
+}

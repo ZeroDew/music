@@ -1,0 +1,17 @@
+<!--components/index/hotlist/hotlist.wxml-->
+<view class="hot-title">
+  <view>热门榜单推荐</view>
+</view>
+<view class="hot-list">
+  <view wx:for="{{HotList}}" wx:key="index" class="hot-list-item" bind:tap="tosonglist" data-id="{{item.id}}">
+    <view class="list-left">
+      <image src="{{item.coverImgUrl}}" mode="widthFix" class="list-img" />
+    </view>
+    <view class="list-right">
+      <view wx:for="{{item.tracks}}" wx:for-item="ele" wx:for-index="idx" wx:key="idx" class="right-item">
+        {{idx+1}}.{{ele.first}}-{{ele.second}}
+      </view>
+    </view>
+
+  </view>
+</view>

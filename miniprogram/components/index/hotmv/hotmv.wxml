@@ -1,0 +1,10 @@
+<view>
+  <view class="mvTitle">热门MV推荐</view>
+  <view class="mvlist">
+    <view class="mv-item" wx:for="{{hotMV}}" wx:key="index" catch:tap="toDetail" data-id="{{item.id}}">
+      <image src="{{item.cover}}" mode="widthFix" class="mv-img" />
+      <view class="mv-name">{{item.name}}</view>
+      <view class="mv-author">{{item.artistName}}</view>
+    </view>
+  </view>
+</view>

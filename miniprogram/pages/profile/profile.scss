@@ -1,0 +1,27 @@
+/* pages/profile/profile.wxss */
+.userinfo {
+  margin: auto;
+  text-align: center;
+
+  .img {
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+  }
+}
+
+.cont {
+  background-color: black;
+  width: 100%;
+  padding: 30rpx;
+  box-sizing: border-box;
+  position: relative;
+  border-bottom: 1rpx solid #3f3f3f;
+  font-size: 30rpx;
+  display: flex;
+  justify-content: space-between;
+
+  .text {
+    color: #d9d9d9;
+  }
+}
